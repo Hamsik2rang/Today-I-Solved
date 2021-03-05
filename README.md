@@ -22,7 +22,7 @@ Not update if I don't solve
 
 2021년 3월 5일 이후로 제가 **[BOJ(Backjoon Online Judge)](https://www.acmicpc.net/)** 에서 해결한 **모든 알고리즘 문제 풀이**를 수록합니다.
 
-**[저의 Solved.ac 프로필](https://solved.ac/profile/lvhi0607)**에서 현재 저의 랭크를 확인할 수 있습니다.
+**[저의 Solved.ac 프로필](https://solved.ac/profile/lvhi0607)** 에서 현재 제 랭크를 확인할 수 있습니다.
 
 사용 언어 : C/C++/C#/Python
 

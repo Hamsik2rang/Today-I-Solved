@@ -1,4 +1,4 @@
-# Problem 9095
+# [Problem 9095](https://www.acmicpc.net/problem/9095)
 
 It has 7 methods to express Integer '4' as sum of 1, 2 ,3. You should use at lesat one integer when you express the sum of any integer.
 

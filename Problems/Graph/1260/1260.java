@@ -38,7 +38,6 @@ public class Main {
     }
 
     public static void dfs(int x, ArrayList<Integer>[] graph) {
-
         check[x] = true;
         System.out.print(x + " ");
         for (int i = 0; i < graph[x].size(); i++) {
@@ -50,9 +49,7 @@ public class Main {
     }
 
     public static void bfs(int x, ArrayList<Integer>[] graph) {
-        final boolean check[] = new boolean[1001];
         Queue<Integer> q = new LinkedList<Integer>();
-
         check[x] = true;
         q.add(x);
         System.out.print(x + " ");

@@ -10,7 +10,7 @@ Can check my **Current Rank** at **[My Solved.ac profile](https://solved.ac/prof
 
 Language : C/C++/C#, and Python
 
-I Tried to write All Comments using English, but Some are written by Korean.
+I tried to write All Comments using English, but Some are written by Korean.
 
 Not update if I don't solve
 

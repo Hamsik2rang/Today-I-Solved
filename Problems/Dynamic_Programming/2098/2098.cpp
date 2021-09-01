@@ -27,7 +27,7 @@ int main()
 		}
 	}
 	memset(D, -1, sizeof(D));
-	// 1번 정점에서 출발하며, 1번 정점으로 되돌아와야 하고 1번에서 시작하므로 방문 비트의 오른쪽에서 첫 번째(2^0) 비트 set, 출발 비용은 없으므로 0으로 호출
+	// Departure vertex 1, should return to vertex 1,and set right-first of check bitmask
 	int answer = find(1, 1, 1);
 	cout << answer << "\n";
 
@@ -36,21 +36,20 @@ int main()
 
 int find(int x, const int dest, int check)
 {
-	// 이미 현재 방문 상태에서의 탐색 결과가 메모되어 있다면 해당 값을 리턴
+	// if already record result of visit of current check state, return that.
 	if (D[x][check] != -1)
 	{
 		return D[x][check];
 	}
 
-	// 모든 정점을 방문했다면
+	// if visited all vertices
 	if (check == (1 << N) - 1)
 	{
-		// 출발 정점으로 돌아갈 수 없는 경우(인접하지 않은 경우)
+		// if can't return to departure vertex
 		if (!W[x][dest])
 		{
 			return INF;
 		}
-		// 돌아갈 수 있는 경우
 		else
 		{
 			return W[x][dest];
@@ -63,17 +62,17 @@ int find(int x, const int dest, int check)
 		{
 			continue;
 		}
-		// 방문한 정점은 무시
+		// ignore already visited vertex
 		if (!W[x][i] || (check & (1 << (i - 1))))
 		{
 			continue;
 		}
-		// 방문하지 않은 인접한 모든 정점을 방문해 본 후 그 중 최소 비용을 선정
+		// visit all vertex that not visited yet
 		auto nextCheck = check | (1 << (i - 1));
 		int result = find(i, dest, nextCheck) + W[x][i];
 		answer = answer > result ? result : answer;
 	}
-	// 현재 정점에서 모든 경로 탐색 후 출발지로 돌아가는 최소 비용을 메모 후 리턴
+	// record minimum value of visiting adjacency vertices
 	D[x][check] = answer;
 
 	return D[x][check];

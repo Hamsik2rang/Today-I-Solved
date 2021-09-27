@@ -35,6 +35,7 @@ int main()
 			sticker[i][0] += max(sticker[i - 1][1], sticker[i - 2][1]);
 			sticker[i][1] += max(sticker[i - 1][0], sticker[i - 2][0]);
 		}
+		// just use for avoid warning
 		if (n > 0)
 		{
 			cout << max(sticker[n - 1][0], sticker[n - 1][1]) << endl;

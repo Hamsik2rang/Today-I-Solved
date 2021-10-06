@@ -1,4 +1,3 @@
-#include <iostream>
 #include <vector>
 #include <string>
 
@@ -42,24 +41,4 @@ int solution(int n, vector<vector<int>> wires)
 	}
 
 	return answer;
-}
-
-int main(void)
-{
-	freopen("input3.txt", "r", stdin);
-	int n;
-	cin >> n;
-	vector<vector<int>> wires(n - 1);
-
-	for (int i = 0; i < n - 1; i++)
-	{
-		int w1, w2;
-		cin >> w1 >> w2;
-		wires[i].push_back(w1);
-		wires[i].push_back(w2);
-	}
-
-	cout << solution(n, wires) << endl;
-
-	return 0;
 }

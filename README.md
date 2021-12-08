@@ -6,7 +6,7 @@
 
 Upload **All Code of Problems** that I solved on **[BOJ(Backjoon Online Judge)](https://www.acmicpc.net/) , [Programmers](https://programmers.co.kr/)** since 5, Mar 2021.
 
-Can check my **Current Rank** at **[My Solved.ac profile](https://solved.ac/profile/lvhi0607)**
+You can check my **Current Rank** at **[My Solved.ac profile](https://solved.ac/profile/lvhi0607)**
 
 Language : C/C++/C#, and Python
 

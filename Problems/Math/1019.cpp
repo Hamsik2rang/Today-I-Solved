@@ -1,3 +1,4 @@
+// ref to https://www.slideshare.net/Baekjoon/baekjoon-online-judge-1019
 #define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <vector>
